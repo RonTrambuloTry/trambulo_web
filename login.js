@@ -6,9 +6,18 @@ function createAccount(){
 
     if (email==="ronrontrambulo15@gmail.com"){
         console.log("Your email is correct.");
-    }else{
-        console.log("Your email is incorrect.");
-        document.getElementById("error-msg").innerHTML = "Your email is incorrect.";
+   if (email === correctEmail && password === correctPassword) {
+                messageElement.textContent = "Your email and password is correct!";
+                messageElement.className = "message success";
+            } else if (email === correctEmail && password !== correctPassword) {
+                messageElement.textContent = "Your password is incorrect";
+                messageElement.className = "message error";
+            } else if (email !== correctEmail && password === correctPassword) {
+                messageElement.textContent = "Your email is incorrect";
+                messageElement.className = "message warning";
+            } else {
+                messageElement.textContent = "Your email and password is incorrect";
+                messageElement.className = "message error";
 
         
         
