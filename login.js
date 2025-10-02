@@ -1,9 +1,9 @@
 //Trambulo, Ron T. 1D
 function login() {
     //Email: ronrontrambulo15@gmail.com // Error Message: Your email is correct
-    //password: rontr@mbuloPOGIko03  // Error Message Your password is correct
-    let email = document.getElementById("email").Value;
-    let password = document.getElementById("password").Value;
+    //password: rontr@mbuloPOGIko03  // Error Message: Your password is correct
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
     console.log("You enter the email: " + email);
     console.log("You enter the password:" + password);
