@@ -1,29 +1,26 @@
-function createAccount(){
-    let pass = document.getElementById("password").value;
+//Trambulo, Ron T. 1D
+function login() {
+    //Email: ronrontrambulo15@gmail.com // Error Message: Your email is correct
+    //password: rontr@mbuloPOGIko03  // Error Message Your password is correct
+    let email = document.getElementById("email").Value;
+    let password = document.getElementById("password").Value;
 
     console.log("You enter the email: " + email);
-    console.log("You enter the password: " + pass);
+    console.log("You enter the password:" + password);
 
-    if (email==="ronrontrambulo15@gmail.com"){
-        console.log("Your email is correct.");
-   if (email === correctEmail && password === correctPassword) {
-                messageElement.textContent = "Your email and password is correct!";
-                messageElement.className = "message success";
-            } else if (email === correctEmail && password !== correctPassword) {
-                messageElement.textContent = "Your password is incorrect";
-                messageElement.className = "message error";
-            } else if (email !== correctEmail && password === correctPassword) {
-                messageElement.textContent = "Your email is incorrect";
-                messageElement.className = "message warning";
-            } else {
-                messageElement.textContent = "Your email and password is incorrect";
-                messageElement.className = "message error";
-
-        
-        
-
-    }   
-    
+    if (email == "ronrontrambulo15@gmail.com"){
+        console.log("Your email password is correct");
+    }else 
+        console.log("Your email password is incorrect ");
 
 
+    if (password == "rontr@mbuloPOGIko03"){
+        console.log("Your password is correct");
+    }else
+        console.log("Your password is incorrect");
+
+
+    if (password == "rontr@mbuloPOGIko03");{
+        console.log("Your password is correct");
+    }
 }
